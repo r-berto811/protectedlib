@@ -64,7 +64,7 @@ There are two ways to set you packages configuration data
 ```
 2. Set as options in init method:
 ```javascript
-const privatelib = require('privatelib').init({
+const protectedlib = require('protectedlib').init({
   keys_dir: 'ssh',
   packages: {
     myprotectedlib1: {
@@ -81,7 +81,7 @@ const privatelib = require('privatelib').init({
 ```javascript
 // or you can load from your custom file
 const fs = require('fs')
-const privatelib = require('privatelib').init(JSON.parse(fs.readFileSync('your/custom/file', 'utf-8')))
+const protectedlib = require('protectedlib').init(JSON.parse(fs.readFileSync('your/custom/file', 'utf-8')))
 ```
 ### Create preinstall and postinstall bin files
 To make the keys automatically added and removed during installation, create preinstall and postinstall scripts
@@ -91,8 +91,8 @@ To make the keys automatically added and removed during installation, create pre
   #!/usr/bin/env node
 
   // config will be loaded from protected.json
-  const privatelib = require('privatelib').init()
-  privatelib.addKeys()
+  const protectedlib = require('protectedlib').init()
+  protectedlib.addKeys()
 ```
 
 * `postinstall`
@@ -100,8 +100,8 @@ To make the keys automatically added and removed during installation, create pre
   #!/usr/bin/env node
 
   // config will be loaded from protected.json
-  const privatelib = require('privatelib').init()
-  privatelib.removeKeys()
+  const protectedlib = require('protectedlib').init()
+  protectedlib.removeKeys()
 ```
 
 ### Add preinstall and postinstall commands to `package.json`

@@ -1,11 +1,11 @@
 {
-  "name": "privatelib",
+  "name": "protectedlib",
   "version": "1.0.0",
   "description": "Add ssh keys to your project, and set it in your environment before install",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/r-berto811/privatelib.git"
+    "url": "https://github.com/r-berto811/protectedlib.git"
   },
   "keywords": [
     "private",
@@ -23,7 +23,7 @@
     "expand-home-dir": "0.0.3"
   },
   "license": "MIT",
-  "homepage": "https://github.com/r-berto811/privatelib",
+  "homepage": "https://github.com/r-berto811/protectedlib",
   "devDependencies": {
     "standard": "^11.0.1"
   }
