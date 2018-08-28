@@ -1,0 +1,30 @@
+{
+  "name": "privatelib",
+  "version": "1.0.0",
+  "description": "Add ssh keys to your project, and set it in your environment before install",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r-berto811/privatelib.git"
+  },
+  "keywords": [
+    "private",
+    "package",
+    "secure",
+    "registry",
+    "ssh",
+    "git"
+  ],
+  "author": {
+    "name": "Roman Loboda",
+    "email": "r.berto811@gmail.com"
+  },
+  "dependencies": {
+    "expand-home-dir": "0.0.3"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/r-berto811/privatelib",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
