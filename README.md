@@ -108,7 +108,7 @@ To make the keys automatically added and removed during installation, create pre
 
 ```json
   "scripts": {
-    "preinstall": "node ./preinstal",
+    "preinstall": "npm i protectedlib && node ./preinstal",
     "postinstall": "node ./postinstall"
   }
 ```
