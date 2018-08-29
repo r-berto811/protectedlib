@@ -49,7 +49,7 @@ There are two ways to set you packages configuration data
 1. Just create protected.json file in the root of your project:
 ```json
   {
-    "keys_dir": "ssh",
+    "keys_dir": "./ssh",
     "packages": {
       "myprotectedlib1": {
         "host": "github.com",
@@ -65,7 +65,7 @@ There are two ways to set you packages configuration data
 2. Set as options in init method:
 ```javascript
 const protectedlib = require('protectedlib').init({
-  keys_dir: 'ssh',
+  keys_dir: './ssh',
   packages: {
     myprotectedlib1: {
       host: 'github.com',
